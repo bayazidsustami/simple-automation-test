@@ -8,8 +8,6 @@ This repository contains Cypress automation test scripts for https://www.saucede
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
