@@ -10,8 +10,18 @@ describe('add cart feature', () => {
     })
 
     it('should add item to cart', () => {
+
         cy.get('#add-to-cart-sauce-labs-backpack').click()
         cy.get('.shopping_cart_badge').should('have.text', '1')
+    })
+
+    it('should add item to cart and remove cart', () => {
+        
+        cy.get('#add-to-cart-sauce-labs-backpack').click()
+        cy.get('.shopping_cart_badge').should('have.text', '1')
+
+        cy.get('#remove-sauce-labs-backpack').click()
+        cy.get('.shopping_cart_badge').should('not.exist')
     })
     
     it('should add multiple items to cart', () => {
